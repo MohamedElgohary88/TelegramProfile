@@ -8,8 +8,6 @@
     app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@id/constraint"
         android:layout_width="match_parent"

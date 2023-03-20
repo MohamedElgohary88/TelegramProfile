@@ -15,7 +15,8 @@
         </KeyFrameSet>
         <OnSwipe
             motion:touchAnchorId="@+id/scrollView"
-            motion:touchAnchorSide="middle" />
+            motion:touchAnchorSide="middle"
+            />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -33,10 +34,11 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="34dp"
+            android:layout_marginBottom="24dp"
             motion:layout_constraintBottom_toBottomOf="@+id/constraint"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/back_IV">
+            motion:layout_constraintTop_toBottomOf="@+id/back_IV"
+            android:layout_marginTop="24dp">
             <CustomAttribute
                 motion:attributeName="roundPercent"
                 motion:customDimension="@dimen/round_corner" />
@@ -173,8 +175,9 @@
 
     <Transition
         motion:constraintSetEnd="@+id/finish"
+        motion:autoTransition="animateToStart"
         motion:constraintSetStart="@+id/end_two"
-        motion:duration="1500">
+        motion:duration="500">
         <OnSwipe
             motion:dragDirection="dragDown"
             motion:maxAcceleration="13.06"
